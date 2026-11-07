@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zig WASM DSP</title>
+  </head>
+  <body>
+    <h1>Zig WASM DSP</h1>
+    <p>A 110 Hz sawtooth through a Zig low-pass filter running in an AudioWorklet.</p>
+    <button id="toggle">Start</button>
+    <label>Filter <input id="cutoff" type="range" min="0.005" max="1" step="0.005" value="0.1" /></label>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

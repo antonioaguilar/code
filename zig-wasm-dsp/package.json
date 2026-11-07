@@ -1,0 +1,17 @@
+{
+  "name": "zig-wasm-dsp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "zig build test && zig build && node --test test/wasm.test.mjs",
+    "bench": "node bench/bench.mjs",
+    "typecheck": "tsc",
+    "build": "zig build --release && esbuild web/main.ts web/worklet.ts --bundle --format=esm --outdir=web/dist && cp web/index.html zig-out/bin/dsp.wasm web/dist/",
+    "serve": "python3 -m http.server 8080 -d web/dist"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.0",
+    "typescript": "5.6.3"
+  }
+}
