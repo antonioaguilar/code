@@ -1,3 +1,1 @@
-# Articles
-
 - [Zig for Freestanding WebAssembly: Tiny, Predictable Modules for Real-Time Audio and Media](zig-wasm-dsp/)
